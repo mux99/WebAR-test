@@ -3,15 +3,21 @@
 <head>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script>
+        function test_attack() {
+
+        }
+    </script>
 </head>
 <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs>
-        <a-marker preset="hiro">
+    <a-scene embedded arjs='debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+        <a-marker type='barcode' value='5'>
             <a-entity>
-                <a-image src="https://cdn.discordapp.com/attachments/298177633684815873/1253136278829137930/image.png?ex=66b4b25b&is=66b360db&hm=bd018dfae39cb5216b3ba954f26670692a4785f336be20b67b978d03b337ed6a&" position="0 0.5 0" rotation="0 0 0" scale="1 1 1"></a-image>
+                <a-image src="/static/IMG_0396.gif" position="0 0.5 0" rotation="0 0 0" scale="5 5 1"></a-image>
             </a-entity>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
+    <button onclick=""></button>
 </body>
 </html>
