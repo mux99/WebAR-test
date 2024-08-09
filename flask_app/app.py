@@ -6,6 +6,13 @@ import os
 
 app = Flask(__name__)
 
+print(app.root_path)
+print(app.has_static_folder)
+print(app.static_folder)
+import os
+names = os.listdir(os.path.join(app.static_folder))
+print(names) # list of static files
+
 @app.errorhandler(404)
 def page_not_found(error):
     # Render a custom 404 template
