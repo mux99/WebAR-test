@@ -22,9 +22,9 @@ def page_not_found(error):
 def landing_page():
     return render_template('index.html')
 
-@app.route("/exemple")
+@app.route("/p2p")
 def exemple_page():
-    return render_template('exemple.html')
+    return render_template('p2p.html')
 
 if __name__ == "__main__":
     app.run(host="::", port=4000, debug=True, ssl_context='adhoc')
